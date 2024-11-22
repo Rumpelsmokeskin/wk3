@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!--This is the link tag to link an external style sheet-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <!-- This is the navbar code with the class information installed from bootstrap.css-->
+   <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <!--This is used to create a link out of a company logo image and to add text (COMPANY NAME)-->
+        <a style="border:solid white; padding-left: 5px;padding-right: 5px; border-radius: 5px;" class="navbar-brand" href="https://symmetrysauna.com">
+            <img src="/WK3/images/symmetry_logo.png" alt="Symmetry Sauna Logo" height="50px" class="d-inline-block"><span style="color:lightgray">Symmetry Sauna</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link" href="index.html"><span style="color:white">Home</span></a>
+                </li>
+                <li class="nav-item active">
+                <a class="nav-link active" href="about.html"><span style="color:white">About</span></a>
+                 </li>
+                <li class="nav-item">
+                <a class="nav-link" href="contact.html"><span style="color:white">Contact</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+   </nav>
+
+   <!--This is a fluid container under the navbar that contains a table-->
+   <div class="container-fluid ">
+    <div class="row">
+        <div class="col-md">
+            <table class="table table-secondary">
+                <thead style="text-align: center;">
+                    <tr>
+                        <th scope="col">INFRARED</th>
+                        <th scope="col">TRADITIONAL</th>
+                    </tr>
+                </thead>
+                <TBODY>
+                    <tr>
+                        <td><img src="images/bedroom.jpg" class="img-fluid"></td>
+                        <td><img src="images/02.png" class="img-fluid"></td>
+                    </tr>
+                </TBODY>
+            </table>
+            <div class="row">
+                <!--this div column isn't really necessary other than aesthetics.  It provides a margin or padding (NOT SURE WHICH) for the text form the border of the browser-->
+                <div class="col-md">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   </div>
+
+   <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
