@@ -6,32 +6,36 @@
     <title>About Us</title>
     <!--This is the link tag to link an external style sheet-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- This is the navbar code with the class information installed from bootstrap.css-->
+    
+   <!-- This is the navbar code with the class information installed from bootstrap.css-->
    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
-        <!--This is used to create a link out of a company logo image and to add text (COMPANY NAME)-->
-        <a style="border:solid white; padding-left: 5px;padding-right: 5px; border-radius: 5px;" class="navbar-brand" href="https://symmetrysauna.com">
-            <img src="/WK3/images/symmetry_logo.png" alt="Symmetry Sauna Logo" height="50px" class="d-inline-block"><span style="color:lightgray">Symmetry Sauna</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                <a class="nav-link" href="index.html"><span style="color:white">Home</span></a>
-                </li>
-                <li class="nav-item active">
-                <a class="nav-link active" href="about.html"><span style="color:white">About</span></a>
-                 </li>
-                <li class="nav-item">
-                <a class="nav-link" href="contact.html"><span style="color:white">Contact</span></a>
-                </li>
-            </ul>
-        </div>
+    <!--This is used to create a link out of a company logo image and to add text (COMPANY NAME)-->
+    <a style="border:solid white; padding-left: 5px;padding-right: 5px; border-radius: 5px;" class="navbar-brand" href="https://symmetrysauna.com">
+        <img src="/WK3/images/symmetry_logo.png" alt="Symmetry Sauna Logo" height="50px" class="d-inline-block"><span style="color:lightgray">Symmetry Sauna</span>
+    </a>
+    <!--hamburger button code-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--code for both expanded and collapsed navigation.  I had a problem with the code at first.  I was using newest bootstrap commands.  Reverted to 4.4.1 commands / ul li structure, works fine now-->
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link" href="index.html"><span style="color:white">Home</span></a>
+            </li>
+            <li class="nav-item active">
+            <a class="nav-link active" href="about.html"><span style="color:white">About</span></a>
+             </li>
+            <li class="nav-item">
+            <a class="nav-link" href="contact.html"><span style="color:white">Contact</span></a>
+            </li>
+        </ul>
     </div>
-   </nav>
+</div>
+</nav>
 
    <!--This is a fluid container under the navbar that contains a table-->
    <div class="container-fluid ">
